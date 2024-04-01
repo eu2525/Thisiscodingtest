@@ -1,5 +1,6 @@
 array = [7,5,9,0,3,1,6,2,4,8]
 
+#선택정렬
 for i in range(len(array)):
     min_idx = i
     for j in range(i + 1, len(array)):
@@ -9,3 +10,4 @@ for i in range(len(array)):
     array[i], array[min_idx] = array[min_idx], array[i]
 
 print(array)
+
