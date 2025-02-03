@@ -24,8 +24,6 @@ for row in range(n):
             result += 1
             break
         
-
-
 # 열을 보는 경우
 for col in range(n):
     prev_num = grid[0][col]
@@ -41,4 +39,7 @@ for col in range(n):
             result += 1
             break
 
-print(result)
+if n == 1:
+    print(2)
+else:
+    print(result)
