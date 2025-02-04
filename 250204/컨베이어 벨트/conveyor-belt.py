@@ -4,19 +4,20 @@ d = list(map(int, input().split()))
 
 # Write your code here!
 for _ in range(t):
-    next_d = [d[-1]]
-    next_u = [u[-1]]
-  
+    next_u = [d[-1]]
+    next_d = [u[-1]]
     new_u = u[:-1]
     new_d = d[:-1]
-    next_d.extend(new_u)
-    next_u.extend(new_d)
+
+    next_u.extend(new_u)
+    next_d.extend(new_d)
 
     d = next_d
     u = next_u
 
-for j in d:
-    print(j, end = ' ')
-print()
 for i in u:
     print(i, end = ' ')
+print()
+for j in d:
+    print(j, end = ' ')
+
