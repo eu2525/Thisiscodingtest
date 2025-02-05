@@ -10,6 +10,9 @@ def is_prime(n):
 
 result = 0
 for num in range(a, b + 1):
+    if num == 1:
+        continue
+        
     if is_prime(num):
         result += num
 
